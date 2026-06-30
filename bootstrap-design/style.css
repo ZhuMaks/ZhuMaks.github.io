@@ -1,0 +1,52 @@
+.navbar .navbar-nav .text-secondary-text {
+    color: #94a3b8;
+}
+
+.text-mini {
+    font-size: 0.78rem;
+}
+
+.tracking-tight {
+    letter-spacing: -1px;
+}
+
+form .form-content-input {
+    background-color: #f8fafc;
+}
+
+form .form-content-input:focus, 
+form textarea:focus, 
+form .form-select:focus {
+    background-color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.15);
+}
+
+fieldset legend.fs-6 {
+    font-size: 0.9rem;
+}
+
+.card .card-header {
+    border-bottom: none;
+}
+
+.card .list-group-item {
+    background: transparent;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #343a40;
+    color: #38bdf8;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+footer p.small {
+    color: #cbd5e1;
+}
