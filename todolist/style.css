@@ -1,0 +1,14 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.todo-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.list-group-item {
+    cursor: pointer;
+}
