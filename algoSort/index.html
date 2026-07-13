@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Візуалізатор Алгоритмів Сортування</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Сортування масивів</h1>
+    <p class="subtitle">Введіть числа через кому або згенеруйте випадковий масив</p>
+
+    <div class="input-section">
+        <div class="generator-controls">
+            <label for="arrayInput"><strong>Ваш масив:</strong></label>
+            <button onclick="generateRandomArray()" class="btn-secondary">Згенерувати випадковий масив</button>
+        </div>
+        
+        <input type="text" id="arrayInput" value="5, 3, 8, 4, 2, 1, 9, 7">
+        
+        <div class="buttons-grid">
+            <button onclick="runSort('bubble')">Bubble Sort</button>
+            <button onclick="runSort('selection')">Selection Sort</button>
+            <button onclick="runSort('insertion')">Insertion Sort</button>
+        </div>
+    </div>
+
+    <div id="resultContainer" class="result-box" style="display: none;">
+        <h3 id="algorithmName">Алгоритм</h3>
+        <p><strong>Початковий масив:</strong> <span id="initialArray"></span></p>
+        <p><strong>Відсортований масив:</strong> <span id="sortedArray" class="success-text"></span></p>
+        <p><strong>Лог виконання (покроково):</strong></p>
+        <div id="stepsLog" class="steps"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
